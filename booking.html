@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Booking</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+  <header id="site-header">
+  <div class="header-inner">
+    <a href="booking.html">
+      <img src="logo.png" class="logo" alt="logo">
+    </a>
+    <nav class="navigation">
+      <a href="index.html#portfolio">PORTFOLIO</a>
+      <a href="index.html#about">ABOUT ME</a>
+      <a href="#faq">FAQ</a>
+      <a href="booking.html" class="nav-book">BOOKING</a>
+    </nav>
+  </div>
+</header>
+
+
+
+ <div id="booking-columns">
+  <div class="wrap">
+
+    <div class="consult-intro">
+      <h1>READY TO BOOK or need to Consult?</h1>
+      <p>Visit me at my Bondi Beach studio for an individual consultation, where we can discuss your ideas or any concerns. Let's find the best creative solution for you!</p>
+      <div class="hero-photo photo-frame">
+        <img src="metattooing.jpeg" alt="me tattooing" class="frame-img">
+      </div>
+    </div>
+
+    <div class="inquiry-panel">
+      <h2>TATTOO INQUIRY</h2>
+      <form id="booking-form" action="mailto:hello@soiia.com" method="post">
+
+        <div class="form-row">
+          <label for="full-name">Full name:</label>
+          <input type="text" id="full-name" name="full-name" placeholder="full name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">E-mail address:</label>
+          <input type="email" id="email" name="email" placeholder="email@google.com" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="0415 785 128">
+        </div>
+        <div class="form-row">
+          <label for="placement">Design/Placement:</label>
+          <input type="text" id="placement" name="placement" placeholder="e.g. shoulder, forearm" required>
+        </div>
+        <div class="form-row">
+          <label for="idea">Design idea:</label>
+          <textarea id="idea" name="idea" placeholder="Explain your detailed idea here" required></textarea>
+        </div>
+       <div class="form-row">
+  <label for="reference-photos">Reference Photos (optional):</label>
+  <input type="file" id="reference-photos" name="reference-photos" class="visually-hidden-file">
+  <label for="reference-photos" class="file-upload-label">UPLOAD FILES</label>
+</div>
+        <div class="form-row">
+          <label for="preferred-days">Preferred Days:</label>
+          <select id="preferred-days" name="preferred-days" required>
+            <option value="">Select</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">SUBMIT</button>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<div class="faq-section" id="faq">
+  <h2>FREQUENTLY ASKED QUESTIONS</h2>
+  <details class="faq-item">
+    <summary>Where is your studio located?</summary>
+    <p>The studio is based at Bondi Beach, 2026 NSW. Full address will be shared after your booking is confirmed.</p>
+  </details>
+  <details class="faq-item">
+    <summary>Is any deposit required before booking?</summary>
+    <p>Yes, I require a deposit, that secures your booking after the date is confirmed. Deposit will be deducted from the total cost at the day of appointment.</p>
+  </details>
+  <details class="faq-item">
+    <summary>Can I get a tattoo if I'm under 18?</summary>
+    <p>You must be 18 or older and provide valid photo ID.</p>
+  </details>
+  <details class="faq-item">
+    <summary>Can I see my design first?</summary>
+    <p>Surely yes, final design will be shared ahead of your session, with space for any small adjustments.</p>
+  </details>
+  <p class="faq-more">Any more questions? Send me message! </p>
+</div>
+
+<div class="cta-inline">
+  <h2>READY TO START FEELING<br>CONFIDENT IN YOUR SKIN?</h2>
+  <a href="mailto:hello@soiia.com" class="btn btn-primary">CONTACT ME TODAY!</a>
+</div>
+
+<footer class="footer">
+  <div class="footer-brand">
+    <p><a href="mailto:tattoo@soiia.com">tattoo@soiia.com</a></p>
+    <p><a href="tel:+61400123456">+61 900 123 676</a></p>
+    <p>Bondi Beach, 2026 NSW</p>
+  </div>
+
+  <div class="footer-bottom-row">
+    <div class="footer-social">
+      <a href="https://instagram.com/"><img src="instagram.png" alt="Instagram" class="social-icon"></a>
+      <a href="https://tiktok.com/"><img src="tiktok.png" alt="TikTok" class="social-icon"></a>
+    </div>
+    <p class="footer-bottom">&copy; 2026 Ema Sinaiova. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,544 @@
+/*PRIMARY / PORTFOLIO PAGE*/
+
+/*------------------------------------------------*/
+
+/*colors that Im working with + gradient*/
+:root {
+  --bg: #1e1d1d;
+  --panel-rows: #3b2261;
+  --blue-ink: #2E005D;
+  --indigo: #2E005D;
+  --magenta: #8E008B;
+  --orange: #FF8300;
+  --orange-blaze: #FF6200;
+  --violet: #b47bff;  
+  --white: #FFFFFF;
+  --muted-grey: #FFFFFFAD;
+  --gradient-cta: linear-gradient(90deg, var(--magenta), var(--orange-blaze));
+}
+
+/*------------------------------------------------*/
+
+/*HEADER*/
+  #site-header {
+  background-color: black;
+}
+/*HEADER - position of elements in my header*/
+.header-inner {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*HEADER - logo and its setting*/
+.logo {
+  height: 70px;
+}
+
+/*HEADER - (PORTFOLIO,ABOUT,FAQ) text position*/
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/*HEADER - (PORTFOLIO,ABOUT,FAQ) text setting*/
+.navigation a {
+  font-size: 1rem;
+  font-weight: 700;
+  color:white;
+}
+
+/*HEADER - (PORTFOLIO,ABOUT,FAQ) text activated*/
+.navigation a:hover {
+  color: var(--violet);
+}
+
+/*HEADER - booking button and its setting*/
+.nav-book {
+  border: 1px solid var(--orange);
+  border-radius: 4px;
+  padding: 0.6rem 1rem;
+}
+
+/*HEADER - activated booking button*/
+.nav-book:hover {
+  background: var(--gradient-cta);
+}
+
+/*HEADER- text setting for no underline as default*/
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/*------------------------------------------------*/
+
+/*BODY*/
+
+/*BODY - backgroud and text setting */
+body {
+  background-color: #1e1d1d;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+/*BODY - text/headings setting (boldness and spacing)*/
+h1 {
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+h2 {
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+h3 {
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+h4 {
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+/*BODY - 2 column layout, 1st part*/
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+/*BODY - photo of me/photo1.jpeg setting*/
+.frame-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*BODY - photo frame round corners*/
+.frame-img {
+  border-radius: 6px;
+}
+
+/*BODY - text setting for CUSTOM TATTOOS,
+ or text above heading*/
+.eyebrow {
+  color: #b47bff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+/*BODY - setting for text THAT SPEAK YOUR STORY */
+#hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1.25rem;
+}
+
+/*BODY - section containing:
+- setting for text 
+(Original Tattoo Art. Custom Designs. Precision.) 
+- vertical magenta line*/
+.hero-sub {
+  border-left: 3px solid var(--magenta);
+  padding-left: 1rem;
+  color: var(--muted-grey);
+  font-size: 1.5rem;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+/*BODY - button row setting*/
+.button-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/*BODY - setting for 2nd button outline 
+(View portfolio)*/
+.btn-outline {
+  padding: 14px 28px;
+ font-weight: 700;
+  border: 1px solid #a239ff;
+  border-radius: 8px;
+}
+/*BODY - activated button (view portfolio)*/
+.btn-outline:hover {
+  background-color: #a239ff;
+}
+/*------------------------------------------------*/
+/*BODY - divider section setting
++ text ART • INTENTION • PRECISION*/
+.divider-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  color: var(--violet);
+  font-size: 1.3rem;
+  font-weight:300;
+}
+
+/*BODY - divider line setting*/
+.divider-line {
+  width: 390px;
+  height: 0.5px;
+  background-color:var(--violet);
+}
+/*------------------------------------------------*/
+/*BODY - ABOUT ME 2 column layout setting - 2nd part*/
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 2rem 13rem;
+}
+
+/*BODY - setting for text/heading
+(Tattoo Artist focused on...)*/
+#about h2 {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+/*BODY - setting for text above and below heading
+(Hey, I'm Soiia! / Based at Bondi Beach...)*/
+#about p {
+  font-size: 18px;
+  color: var(--muted-grey);
+  max-width: 480px;
+  margin-bottom: 1.5rem;
+}
+
+/*BODY - setting for photo frames in my layout*/
+.about-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/*BODY - setting ratio for photo frames in my layout*/
+.about-photos .photo-frame {
+  aspect-ratio: 3 / 4;
+}
+/*------------------------------------------------*/
+/*BODY - PORTFOLIO grid/layout - 3rd part*/
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+/*BODY - setting position of grid on the page*/
+#portfolio {
+  padding-bottom: 4rem;
+  margin-left: 13rem;
+   margin-right: 13rem;
+}
+
+/*BODY - setting ratio for photo frames in portfolio grid*/
+.gallery-grid .photo-frame {
+  aspect-ratio: 3.5/4;
+}
+/*------------------------------------------------*/
+/*BODY - CTA BANNER layout setting- 4th part*/
+.cta-banner {
+  background-color: #2b1a4a;
+  border-top: 1px solid var(--violet);
+  border-bottom: 1px solid var(--violet);
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+/*BODY - text/heading 
+READY TO START FEELING CONFIDENT
+ IN YOUR SKIN? setting*/
+.cta-banner h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/*BODY - buttons*/
+/*buttons with gradient setting*/
+.btn-primary {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #8E008B, #FF6200);
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/*activated buttons with violet*/
+.btn-primary:hover {
+  color: var(--violet); /*only for text*/
+}
+/*------------------------------------------------*/
+/*FOOTER - centering footer layout */
+.footer {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 2rem;
+}
+
+/*FOOTER - setting of text
+(contact info)*/
+.footer-brand a {
+  color: var(--muted-grey);
+}
+
+/*FOOTER - activated text
+(contact info)*/
+.footer-brand a:hover {
+  color: #b47bff;
+}
+
+/*FOOTER - setting of text
+(Bondi Beach, 2026 NSW)*/
+.footer-brand p {
+  color: var(--muted-grey);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/*FOOTER - setting of text
+(© 2026 Ema Sinaiova. All rights reserved.)*/
+.footer-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*FOOTER - social media icons*/
+.social-icon {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--violet);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+/*FOOTER - setting for social media icons in horizontal row*/
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+}
+/*FOOTER - activated social media icons*/
+.social-icon:hover {
+  background-color: var(--panel-rows);
+}
+
+/*FOOTER - setting for text 
+(© 2026 Ema Sinaiova. All rights reserved.) in horizontal row*/
+.footer-bottom {
+  font-size: 0.8rem;
+  color: var(--muted-grey);
+}
+
+/*------------------------------------------------*/
+
+/*SECONDARY / BOOKING PAGE*/
+/*reset or universal selector that targets elements
+- removes default spacing*/
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/*collumn layout*/
+#booking-columns .wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+/*centered area that doesnt get wider */
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/*1st part - setting text/heading READY TO BOOK... */
+.consult-intro h1 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/*text setting and spacing (Visit me at...) */
+.consult-intro > p {
+  color: var(--muted-grey);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+}
+
+ /*BOOKING FORM*/
+
+/*BOOKING window and its setting*/
+.inquiry-panel {
+  background-color: #2b1a4a;
+  border: 1px solid var(--violet);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 0;
+
+}
+/*BOOKING - TATTOO INQUIRY text/heading*/
+.inquiry-panel h2 {
+  color: var(--violet);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/*BOOKIG form layout, spaces between text and windows*/
+#booking-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+/*BOOKING - text setting*/
+.form-row label {
+  display: block;
+  font-size: 0.90rem;
+  font-weight: 400;
+  margin-bottom: 0.4rem;
+}
+
+/*BOOKING - setting for input/selection in booking rows*/
+.form-row input,
+.form-row select,
+.form-row textarea {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--panel-rows);
+  color: white;
+}
+
+/*BOOKING - hidden section after checking mistakes in html*/
+.visually-hidden-file {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/*BOOKING - upload file row*/
+.file-upload-label {
+  border: 1px solid var(--violet);
+  border-radius: 4px;
+  padding: 0.65rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/*BOOKING - activated upload file row*/
+.file-upload-label:hover {
+  border-color: var(--white);
+}
+
+/*BOOKING - submit button*/
+.form-submit {
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+/*BOOKING - activated submit button*/
+.form-submit:hover {
+  color: var(--violet);
+}
+
+/*------------------------------------------------*/
+
+/*FAQ*/
+/*FAQ position and setting*/
+#faq {
+  max-width: 1170px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/*FAQ - FREQUENTLY ASKED QUESTIONS text/heading*/
+#faq h2 {
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/*FAQ - windows / rows*/
+.faq-item {
+  border: 1px solid var(--violet);
+  border-radius: 4px;
+  margin-bottom: 0.6rem;
+  background-color: #2b1a4a;
+}
+
+/*FAQ - stylig for the opening 
+question line inside of FAQ window*/
+.faq-item summary {
+  padding: 0.9rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/*FAQ - text and position setting inside of opened FAQ*/
+.faq-item p {
+  padding: 0 1.1rem 1rem;
+  color: var(--muted-grey);
+  font-size: 0.9rem;
+}
+
+/*FAQ - setiing of (Still have questions? Send me an e-mail!) text*/
+.faq-more {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/*------------------------------------------------*/
+
+/* CTA banner */
+/* CTA banner - layout */
+.cta-inline {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 4.5rem 1.5rem;
+  background-color: #2b1a4a;
+  border-top: 1px solid var(--violet);
+  border-bottom: 1px solid var(--violet);
+  text-align: center;
+}
+
+/* CTA banner - text setting */
+.cta-inline h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
